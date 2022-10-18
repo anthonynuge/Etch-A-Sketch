@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title" id="coolFont" data-splitting="lines">Retro Sketch</h1>
+        </header>
+        <div class="main">
+            <div class="settings">
+                <input id="colorPicker" type="color" value="#333333">
+                <button id="colorBtn" class="active">Color Mode</button>
+                <button id="rainbowBtn">Rainbow Mode</button>
+                <button id="eraser">Eraser</button>
+                <button id="reset">Reset</button>
+                <div id="sizeSlider" class="sizeValue">16 x 16</div>
+                <input type="range" min="1" max="50" value="16" class="slider"
+                    id="myRange">
+            </div>
+            <div id="grid" class="gridContainer"></div>
+        </div>
+    </div>
+    <div class="footer">Content</div>
+    <script src="app.js"></script>
+</body>
+</html>
